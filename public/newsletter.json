@@ -1,0 +1,16 @@
+{
+  "newsletter": [
+    {
+      "id": 1,
+      "title": "Novedades Enero",
+      "content": "Nuevos proyectos y ampliación del equipo.",
+      "date": "2024-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Actualización Febrero",
+      "content": "Mejoras en la landing page y despliegue en Netlify.",
+      "date": "2024-02-01"
+    }
+  ]
+}

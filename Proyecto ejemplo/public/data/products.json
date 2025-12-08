@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-1.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-2.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-3.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-4.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-5.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-6.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-7.jpg"
+    },
+    {
+        "id":1,
+        "name":"chaqueta piel",
+        "description":"Es calentita",
+        "price":49,
+        "stars":4,
+        "discount":15,
+        "image":"jacket-8.jpg"
+    }
+]

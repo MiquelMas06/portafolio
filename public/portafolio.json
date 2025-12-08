@@ -1,0 +1,32 @@
+{
+  "presentacion": 
+    {
+      "id": 1,
+      "name": "Miquel",
+      "role": "Frontend Developer",
+      "description": "Especialista en React, CSS y animaciones web.",
+    "projects": [
+{
+  "id": 1,
+  "title": "Blog Viajes",
+  "description": "TWeb de viajes online .",
+  "owner": "Miquel",
+  "image": "/assets/images/blogViajes.png"
+},
+{
+  "id": 2,
+  "title": "Web Netflix",
+  "description": "Web secundaria netflix",
+  "owner": "Miquel",
+  "image": "./assets/images/netflix.png"
+},
+{
+  "id": 3,
+  "title": "Tienda zapatos",
+  "description": "Sitio web profesional responsive.",
+  "owner": "Miquel",
+  "image": "/assets/images/Store.png"
+}
+]
+    }
+  }
