@@ -1,16 +1,25 @@
 {
-  "newsletter": [
+  "newsletter": [   
     {
       "id": 1,
-      "title": "Novedades Enero",
-      "content": "Nuevos proyectos y ampliación del equipo.",
+      "image": "./assets/images/bangkok.webp",
+      "title": "Bangkok no duerme, tu tampoco",
+      "content": "Bangkok is vibrant city that's full of incredible food, unusual places of interest and some of the friendliest people in the world.",
       "date": "2024-01-01"
     },
     {
       "id": 2,
-      "title": "Actualización Febrero",
+      "image": "./assets/images/sri Lanka.webp",
+      "title": "sri Lanka existe",
       "content": "Mejoras en la landing page y despliegue en Netlify.",
       "date": "2024-02-01"
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/kenia.webp",
+      "title": "Kenya, the unexpected yoga destination",
+      "content": "Kenya’s natural beauty is stunning. Start the new year with a yoga getaway.",
+      "date": "2024-03-01"
     }
   ]
 }

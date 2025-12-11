@@ -1,33 +1,3 @@
-// export function Projects({ projects }) {
-// //   const all = projectes.flatMap(member =>
-//     // member.projects.map(p => ({ ...p, owner: member.name }))
-//     const all = (projects || []).flatMap(member =>
-//     (member.projects || []).map(p => ({
-//       ...p,
-//       owner: member.name
-//     }))
-//   );
-
-//   return (
-//     <section>
-//       <h1>Proyectos</h1>
-
-//       {all.length === 0 ? (
-//         <p>No hay proyectos.</p>
-//       ) : (
-//         <div style={{ display: "grid", gap: "1rem" }}>
-//           {all.map(p => (
-//             <div key={p.id} style={{ padding: "1rem", border: "1px solid #ccc" }}>
-//               <h3>{p.title}</h3>
-//               <p>{p.description}</p>
-//               <small>Hecho por: {p.owner}</small>
-//             </div>
-//           ))}
-//         </div>
-//       )}
-//     </section>
-//   );
-// }
 export function Projects({ projects }) {
   if (!projects || projects.length === 0) return <p>No hay proyectos.</p>;
 

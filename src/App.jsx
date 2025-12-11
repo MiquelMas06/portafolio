@@ -4,12 +4,12 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Newsletter } from "./components/Newsletter";
 import Footer from "./components/Footer";
-
+import '/public/assets/css/general.css';
 export default function App() {
   const [page, setPage] = useState("home");        // controla qué sección mostrar
   const [data, setData] = useState(null);          // datos del JSON
   const [projects, setProjects] = useState([]);
-
+  const [newsletter, setNewsletter] = useState([]);
   useEffect(() => {
     fetch("/public/portafolio.json")
       .then(res => res.json())
@@ -20,7 +20,11 @@ export default function App() {
       .then(res => res.json())
       .then(json => setData(json));
   }, []);
-
+  useEffect(() => {
+    fetch("/public/newsletter.json")
+      .then(news => news.json())
+      .then(newslet => setNewsletter(newslet));
+  }, []);
   if (!data) return <p>Cargando...</p>;
 
   return (
@@ -35,7 +39,7 @@ export default function App() {
       {page === "home" && <Home presentacion={data.presentacion} />}
       {page === "projects" && <Projects projects={projects} />}
       {page === "contact" && <Contact />}
-      {page === "newsletter" && <Newsletter />}
+      {page === "newsletter" && <Newsletter newsletter={newsletter.newsletter}/>}
       <div>
         <Footer/>
       </div>

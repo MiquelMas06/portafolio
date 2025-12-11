@@ -1,34 +1,25 @@
+import "/public/assets/css/newsletter.css";
 import { useState } from "react";
 
-export function Newsletter() {
-  const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!email) return;
-    // aquí normalment faríem una crida fetch a l'API; per l'entrega guardem en localStorage com a prova
-    const existing = JSON.parse(localStorage.getItem("new_email") || "[]");
-    existing.push({ email, date: new Date().toISOString() });
-    localStorage.setItem("new_email", JSON.stringify(existing));
-    setMsg("¡Gracias por suscribirte!");
-    setEmail("");
-  };
-
+export function Newsletter({ newsletter }) {
+  const [visible, setVisible] = useState(true);
   return (
     <section>
-      <h1>Newsletter</h1>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="email"
-          value={email}
-          placeholder="Tu email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button>Suscribirme</button>
-      </form>
+<div class="container">
+<div class="header">
+<h2>Todo el mundo quiere viajar gratis</h2>
+<p>En la web de creacion de paginas con react puedes encontrar todo lo que deseas sobre paginas web, a demas de descuentos exclusivos para viajes a sitios diversos como: </p>
+</div>
 
-      {msg && <p>{msg}</p>}
+{newsletter.map(p => (
+          <div key={p.id} class="section">
+          <img src={p.image} alt="Bangkok" />
+          <h2>{p.title}</h2>
+          <p style={{ display: visible ? "block" : "none" }}>{p.content}</p>
+          <button class="btn" onClick={() => setVisible(false)}>READ MORE</button>
+          </div>))}
+
+</div>
     </section>
   );
 }
