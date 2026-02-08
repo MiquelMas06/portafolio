@@ -1,80 +1,26 @@
-:root{
-  --accent: #2b6cb0;
-  --muted: #666;
-  --bg: #f8f9fb;
-  --card: #fff;
-}
-
-*{box-sizing:border-box}
 body{
-  margin:0;
-  font-family: Inter, system-ui, Arial, sans-serif;
-  background:var(--bg);
-  color:#222;
-  line-height:1.45;
+    height: auto;
+    margin: auto;
+    flex-direction: column; /* Para apilar las secciones verticalmente */
+    font-family: 'Poppins';
+    background-color: rgb(199, 199, 197);
+}
+header{
+    background-color: rgb(34, 32, 36);
+}
+.contenedorItems{
+    display: flex;
+    padding: 2rem;
+    margin: 0;
+    justify-content: center;
 }
 
-.container{
-  max-width:1000px;
-  margin:0 auto;
-  padding:1.2rem;
-}
-
-.navbar{
-  background:var(--card);
-  border-bottom:1px solid #e6e9ee;
-  position:sticky;
-  top:0;
-  z-index:20;
-}
-.navbar-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:1rem;
-}
-.brand{ font-weight:700; color:var(--accent); }
-.nav-links{ list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
-.nav-links a{ text-decoration:none; padding:0.6rem; border-radius:6px; color:#333; }
-.nav-links a.active{ background:var(--accent); color:#fff; }
-
-.landing h1{ margin-top:0; }
-.team-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin-top:1rem; }
-.card{
-  background:var(--card);
-  padding:1rem;
-  border-radius:10px;
-  box-shadow:0 3px 8px rgba(10,10,10,0.04);
-}
-
-.projects-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
-
-.contact-form label{ display:block; margin-bottom:0.8rem; }
-.contact-form input,
-.contact-form textarea,
-.newsletter-form input{
-  width:100%;
-  padding:0.6rem;
-  border:1px solid #d7dbe0;
-  border-radius:6px;
-}
-.contact-form button,
-.newsletter-form button{
-  margin-top:0.6rem;
-  padding:0.6rem 1rem;
-  background:var(--accent);
-  color:white;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-}
-.small{ color:var(--muted); font-size:0.9rem; }
-.status{ margin-top:0.6rem; color:green; }
-
-.site-footer{
-  margin-top:2rem;
-  padding:1rem 0;
-  text-align:center;
-  background:transparent;
-  color:var(--muted);
+.btn-nav {
+    margin: auto;
+    padding: 10px 18px;
+    border: 1px solid #d2d2d2;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
 }

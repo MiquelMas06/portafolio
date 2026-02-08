@@ -4,7 +4,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Newsletter } from "./components/Newsletter";
 import Footer from "./components/Footer";
-import '/public/assets/css/general.css';
+import './App.css'
 export default function App() {
   const [page, setPage] = useState("home");        // controla qué sección mostrar
   const [data, setData] = useState(null);          // datos del JSON
@@ -28,21 +28,22 @@ export default function App() {
   if (!data) return <p>Cargando...</p>;
 
   return (
-    <div>
-      <nav style={{ display: "flex", gap: "1rem", marginBottom: "20px" }}>
-        <button onClick={() => setPage("home")}>Inicio</button>
-        <button onClick={() => setPage("projects")}>Proyectos</button>
-        <button onClick={() => setPage("contact")}>Contacto</button>
-        <button onClick={() => setPage("newsletter")}>Newsletter</button>
-      </nav>
-
+    <section>
+      <header>
+        <div className="contenedorItems">
+          <button className="btn-nav" onClick={() => setPage("home")}>Inicio</button>
+          <button className="btn-nav" onClick={() => setPage("projects")}>Proyectos</button>
+          <button className="btn-nav" onClick={() => setPage("contact")}>Contacto</button>
+          <button className="btn-nav" onClick={() => setPage("newsletter")}>Newsletter</button>
+        </div>
+      </header>
+      <main className="cuerpo">
       {page === "home" && <Home presentacion={data.presentacion} />}
       {page === "projects" && <Projects projects={projects} />}
       {page === "contact" && <Contact />}
-      {page === "newsletter" && <Newsletter newsletter={newsletter.newsletter}/>}
-      <div>
-        <Footer/>
-      </div>
-    </div>
+      {page === "newsletter" && <Newsletter newsletter={newsletter.newsletter}/>}      
+      </main>
+      <Footer/>
+    </section>
   );
 }

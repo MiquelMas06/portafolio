@@ -1,7 +1,16 @@
 footer{
-    padding: 1.5rem 10% 1rem 10%;
-    background-color: black;
-    color:white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+site-footer{
+    text-decoration: solid;
+    margin-top: auto;
+}
+.container p{
+    color: white;
     display: flex;
     justify-content: center;
 }

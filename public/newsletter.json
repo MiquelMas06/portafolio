@@ -2,6 +2,7 @@
   "newsletter": [   
     {
       "id": 1,
+      "name": "Bangkok",
       "image": "./assets/images/bangkok.webp",
       "title": "Bangkok no duerme, tu tampoco",
       "content": "Bangkok is vibrant city that's full of incredible food, unusual places of interest and some of the friendliest people in the world.",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "name": "sri Lanka",
       "image": "./assets/images/sri Lanka.webp",
       "title": "sri Lanka existe",
       "content": "Mejoras en la landing page y despliegue en Netlify.",
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "name": "Kenya",
       "image": "./assets/images/kenia.webp",
       "title": "Kenya, the unexpected yoga destination",
       "content": "Kenya’s natural beauty is stunning. Start the new year with a yoga getaway.",

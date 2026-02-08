@@ -1,0 +1,43 @@
+.texto{
+    margin: 20px;
+}
+.encabezado {
+    text-align: center;
+    margin: 2rem;
+    background-color: rgba(65, 61, 69, 0.671);
+}
+.titulo-proyecto{
+    font-size: xx-large;
+}
+.img-proyecto{
+    margin-bottom: 1rem;
+    margin-left: auto; 
+    width: 50%;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.card-proyecto {
+  display: flex;
+  align-items: top;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.info-proyecto {
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* el texto ocupa el espacio disponible */
+}
+
+.proyecto{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border: solid;
+    width: 50%;
+}
