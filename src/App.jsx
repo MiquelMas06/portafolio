@@ -11,17 +11,17 @@ export default function App() {
   const [projects, setProjects] = useState([]);
   const [newsletter, setNewsletter] = useState([]);
   useEffect(() => {
-    fetch("/public/data/portafolio.json")
+    fetch("/data/portafolio.json")
       .then(res => res.json())
       .then(json => setProjects(json.presentacion.projects || []));
   }, []);
   useEffect(() => {
-    fetch("/public/data/portafolio.json")
+    fetch("/data/portafolio.json")
       .then(res => res.json())
       .then(json => setData(json));
   }, []);
   useEffect(() => {
-    fetch("/public/data/newsletter.json")
+    fetch("/data/newsletter.json")
       .then(news => news.json())
       .then(newslet => setNewsletter(newslet));
   }, []);
