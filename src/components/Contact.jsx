@@ -1,4 +1,4 @@
-import '/public/assets/css/contact.css'
+import '/public/assets/css/contact.css';
 
 import { useState } from "react";
 export function Contact(){
