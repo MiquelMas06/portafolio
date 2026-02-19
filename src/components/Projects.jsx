@@ -1,4 +1,4 @@
-import "/assets/css/projects.css";
+import "../assets/css/projects.css";
 export function Projects({ projects }) {
   if (!projects || projects.length === 0) return <p>No hay proyectos.</p>;
 

@@ -1,4 +1,4 @@
-import "/assets/css/newsletter.css";
+import "../assets/css/newsletter.css";
 import { Noticia } from "./noticia.jsx";
 import { useState } from "react";
 

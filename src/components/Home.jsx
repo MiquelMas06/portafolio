@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '/assets/css/index.css';
+import '../assets/css/index.css';
 export function Home({ presentacion }) {
     const [visible, setVisible] = useState(false);
   return (
