@@ -1,4 +1,4 @@
-import "../assets/css/newsletter.css";
+import "/src/css/newsletter.css";
 import { useState } from "react";
 
 export function Noticia({ newsletter }) {
